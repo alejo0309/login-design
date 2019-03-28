@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+html{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+}
+body{
+	background-image: url(../images/garage_workshop2.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+
+    font-family: 'ZCOOL XiaoWei', serif;
+
+    margin: 0px;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	background: yellow;
+	opacity: 0.03;
+}
+
+/*container derecho*/
+.loginbox_right{
+	width: 22%;
+	height: 25%;
+	top: 50%;
+	left: 50%;
+	transform: translate(0%, -50%);
+	background: #000000;
+	text-align: center;
+	color: white;
+	opacity: 0.88;
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(255,255,0,0.5);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(255,255,0,0.5);
+	box-shadow: 2px 2px 2px 0px rgba(255,255,0,0.5);
+	position: inherit;
+	border-radius: 0 10px 10px 0;
+	padding: 5px;
+}
+
+/*texto logotipo/nombre empresa*/
+.loginbox_right h1{
+	margin: 20px;
+	margin-bottom: 8px;
+	border-bottom: 1.5px solid white;
+}
+
+/*container izquierdo*/
+.loginbox_left{
+	width: 22%;
+	height: 25%;
+	top: 50%;
+	right: 50%;
+	transform: translate(0%, -50%);
+	background: #000000;	
+	text-align: center;
+	opacity: 0.88;
+	-webkit-box-shadow: -2px 2px 2px 0px rgba(255,255,0,0.5);
+	-moz-box-shadow: -2px 2px 2px 0px rgba(255,255,0,0.5);
+	box-shadow: -2px 2px 2px 0px rgba(255,255,0,0.5);
+	position: inherit;
+	border-radius: 10px 0 0 10px;
+	padding: 5px;
+}
+
+/*imagen logotipo*/
+.loginbox_left img{	
+	margin-top: 9%;
+	border-radius: 50%;
+	border: 1px solid red;
+}
+
+/*divs ventanas emergentes*/
+.textbox{
+	width: 90%;
+	overflow: hidden;
+	padding: 8px 0 8px 8px;
+	margin: 8px 0 8px 8px;
+	border-bottom: 1px solid black;
+	background-color:none;
+}
+
+/*iconos ventanas emergentes*/
+.textbox i{
+	width: 10%;
+	float: left;
+	text-align: center;
+	margin-bottom: 5px;
+
+}
+
+/*textos que acompañan los iconos ventanas emergentes*/
+.textbox input{
+	width: 70%;
+	border: none;
+	background: none;
+	float: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	outline: none;
+}
+.loginbox .textbox:hover{
+}
+
+/*botones container derecho*/
+.button{
+	width: 90%;
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size: 17px;
+	background: #FFFF00;
+	color: #353434;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 6px;
+	margin-top: 1px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	outline: none;
+}
+.loginbox .button:hover{
+}
+
+/*texto olvidar contraseña*/
+#forgot_pass{
+color: #979797;
+font-size: 12px;
+}
+/************************************************/
+
+/*fondo popup*/
+.modal_popup{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.7);
+}
+
+/*popup container*/
+.modal_content{
+	background: rgba(255,255,0,0.80);
+	color: #542F2F;
+	margin: 10% auto;
+	width: 25%;
+	padding: 5px;
+	box-shadow: 1px 1px 5px 1px white;
+	border-radius: 7px;
+	animation-name: open_modal;
+	animation-duration: 2s;
+}
+
+/*boton popup*/
+.modal_button{
+	background-color: white; 
+	color: black;
+	border: none;
+	padding: 20px;
+	margin-left: 85%;
+	border-radius: 10%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/*titulo popoup*/
+.modal_header{
+	padding-bottom: 6px;
+	border-bottom: 1px solid black;
+	font-size: 11px;
+	text-align: center;
+	margin: 0px;
+	color: black;
+}
+
+.modal_header h1{
+	margin: 5px;
+}
+
+
+.closeBtn{
+	color: grey;
+	font-size: 30px;
+	float: right;
+	font-weight: bold;
+	padding-right: 10px;
+}
+.closeBtn:hover, .closeBtn:focus{
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
+@keyframes open_modal{
+	from{opacity: 0}
+	to{opacity: 1}
+}

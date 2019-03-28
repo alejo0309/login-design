@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- link a iconos para LOGIN -->
+	<link href="https://file.myfontastic.com/CeVMaoBfbz6zUHB4t7vnXa/icons.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Inicia Sesión</title>
+</head>
+<body>		
+	<div class="background"></div>	
+	<div class="loginbox_right">
+		<h1>LOGOTIPO</h1>	
+		<button type="button" class="button" name="login" id="login"><b>Entrar</b></button>
+		<button type="button" class="button" name="register" id="register"><b>Regístrate</b></button>
+		<a href="#" id="forgot_pass"><b>¿Olvidaste tu contraseña?</b></button></a>
+	</div>
+	<div class="loginbox_left">	
+		<img src="images/aurea.png" alt="">
+	</div>
+	<div id="login_modal_popup" class="modal_popup">
+		<div class="modal_content">
+			<div class="modal_header">
+				<span id="login_closeBtn" class="closeBtn">&times;</span>
+				<h1>Ingresar</h1>
+			</div>
+			<div class="modal_body">
+				<div class="textbox">
+					<i class="icon-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Ingresa tu correo" name="mail">
+				</div>
+				<div class="textbox">
+				<i class="icon-key" aria-hidden="true"></i>
+				<input type="text" placeholder="Contraseña" name="password">
+			</div>
+				<button class="modal_button"><i class="icon-sign-out"></i></button>
+			</div>
+		</div>
+	</div>
+	<div id="register_modal_popup" class="modal_popup">
+		<div class="modal_content">
+			<div class="modal_header">
+				<span id="register_closeBtn" class="closeBtn">&times;</span>
+				<h1>Crear nuevo usuario</h1>
+			</div>
+			<div class="modal_body">
+				<div class="textbox">
+					<i class="icon-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Nombre" name="name">
+				</div>
+				<div class="textbox">
+					<i class="icon-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Apellido" name="lastname">
+				</div>
+				<div class="textbox">
+					<i class="icon-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Correo electrónico" name="mail">
+				</div>
+				<div class="textbox">
+					<i class="icon-key" aria-hidden="true"></i>
+					<input type="text" placeholder="Contraseña" name="password">
+				</div>
+				<div class="textbox">
+					<i class="icon-key" aria-hidden="true"></i>
+					<input type="text" placeholder="Confirma tu contraseña" name="confirm_password">
+				</div>
+				<a href="#"><button class="modal_button"><i></i></button></a>
+			</div>
+		</div>
+	</div>
+	<div id="forgot_pass_modal_popup" class="modal_popup">
+		<div class="modal_content">
+			<div class="modal_header">
+				<span id="forgot_pass_closeBtn" class="closeBtn">&times;</span>
+				<h1>Olvidé mi contraseña</h1>
+			</div>
+			<div class="modal_body">
+				<div class="textbox">
+					<i class="icon-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Ingresa tu correo" name="mail">
+				</div>
+				<a href="#"><button class="modal_button"><i></i></button></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
